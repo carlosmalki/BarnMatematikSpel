@@ -1,0 +1,243 @@
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #edff8f 50%, #84ff9f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration: 3s;
+  }
+  
+  .bg3 {
+    animation-duration:7s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  #playButton {
+    background-color: #edff8f;
+    border-radius: 30px;
+    box-shadow: 0 0 0.80em rgba(0, 0, 0, 20);
+    box-sizing: border-box;
+    left: 50%;
+    margin-top: 10px;
+    padding: 7vmin;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: fixed;
+    text-align: center;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s infinite ease-in-out;
+    font-family: "Atop Regular";
+    -webkit-text-stroke: 0.1px black;
+    color: #84ff9f;
+    border: 1px solid black;
+
+  }
+  
+  @font-face {
+    font-family: "Atop Regular";
+    src: url(Atop.ttf);
+  }
+
+
+  #title {
+    font-size: 35px;
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    color: #84ff9f;
+    font-family: "Atop Regular";
+    font-weight: lighter;
+    -webkit-text-stroke: 1.2px black;
+    text-shadow: 0 0 0.30em rgba(0, 0, 0, 10);
+
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  #playButtonH1 {
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  #MathSymbol1,#MathSymbol2,#MathSymbol3,#MathSymbol4,#MathSymbol5,#MathSymbol6,#MathSymbol7,#MathSymbol8,#MathSymbol9,#MathSymbol10 {
+    font-family: "Atop Regular";
+    font-weight: lighter;
+    opacity: 50%;
+  }
+
+  @keyframes moveRandom1 {
+    0% { top: 0%; left: 0%; }
+    25% { top: 30%; left: 110%; }
+    50% { top: 120%; left: 20%; }
+    75% { top: 60%; left: -50%; }
+    100% { top: 0%; left: 0%; }
+}
+
+@keyframes moveRandom2 {
+    0% { top: 20%; left: -30%; }
+    25% { top: 60%; left: 50%; }
+    50% { top: 120%; left: -40%; }
+    75% { top: -30%; left: 130%; }
+    100% { top: 20%; left: -30%; }
+}
+
+@keyframes moveRandom3 {
+    0% { top: 50%; left: -10%; }
+    25% { top: 10%; left: 120%; }
+    50% { top: 120%; left: 10%; }
+    75% { top: 100%; left: -60%; }
+    100% { top: 50%; left: -10%; }
+}
+
+@keyframes moveRandom4 {
+    0% { top: -30%; left: 30%; }
+    25% { top: 60%; left: 90%; }
+    50% { top: 100%; left: -50%; }
+    75% { top: -20%; left: 120%; }
+    100% { top: -30%; left: 30%; }
+}
+
+@keyframes moveRandom5 {
+    0% { top: 40%; left: 110%; }
+    25% { top: -10%; left: 30%; }
+    50% { top: 130%; left: 50%; }
+    75% { top: 10%; left: -60%; }
+    100% { top: 40%; left: 110%; }
+}
+
+@keyframes moveRandom6 {
+    0% { top: 100%; left: 130%; }
+    25% { top: 50%; left: -50%; }
+    50% { top: -30%; left: 70%; }
+    75% { top: 100%; left: 120%; }
+    100% { top: 100%; left: 130%; }
+}
+
+@keyframes moveRandom7 {
+    0% { top: -20%; left: 90%; }
+    25% { top: 60%; left: -30%; }
+    50% { top: 120%; left: 40%; }
+    75% { top: 40%; left: 120%; }
+    100% { top: -20%; left: 90%; }
+}
+
+@keyframes moveRandom8 {
+    0% { top: 70%; left: 120%; }
+    25% { top: 40%; left: -50%; }
+    50% { top: 100%; left: 10%; }
+    75% { top: -10%; left: 70%; }
+    100% { top: 70%; left: 120%; }
+}
+
+@keyframes moveRandom9 {
+    0% { top: 10%; left: -40%; }
+    25% { top: 50%; left: 100%; }
+    50% { top: 80%; left: -20%; }
+    75% { top: 60%; left: 130%; }
+    100% { top: 10%; left: -40%; }
+}
+
+@keyframes moveRandom10 {
+    0% { top: 40%; left: 30%; }
+    25% { top: -10%; left: 130%; }
+    50% { top: 120%; left: -50%; }
+    75% { top: 80%; left: 20%; }
+    100% { top: 40%; left: 30%; }
+}
+
+@keyframes rotate {
+    100% { transform: rotate(360deg); }
+}
+
+#MathSymbol1, #MathSymbol2, #MathSymbol3, #MathSymbol4, #MathSymbol5,
+#MathSymbol6, #MathSymbol7, #MathSymbol8, #MathSymbol9, #MathSymbol10
+ {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-family: "Atop Regular";
+    font-weight: lighter;
+    opacity: 100%;
+    font-size: 50px;
+}
+
+#MathSymbol1, #MathSymbol2 {
+  color: #84ff9f;
+  -webkit-text-stroke: 1px black;
+}
+
+#MathSymbol3, #MathSymbol4 {
+  color: #edff8f;
+  -webkit-text-stroke: 1px black;
+}
+
+#MathSymbol5, #MathSymbol6 {
+  color: #84ff9f;
+  -webkit-text-stroke: 1px black;
+}
+
+#MathSymbol7, #MathSymbol8 {
+  color: #edff8f;
+  -webkit-text-stroke: 1px black;
+}
+
+#MathSymbol9, #MathSymbol10 {
+  color: #84ff9f;
+  -webkit-text-stroke: 1px black;
+}
+
+
+
+#MathSymbol1 { animation: moveRandom1 16s infinite linear, rotate 20s infinite linear; }
+#MathSymbol2 { animation: moveRandom2 15s infinite linear, rotate 15s infinite linear; }
+#MathSymbol3 { animation: moveRandom3 17s infinite linear, rotate 16s infinite linear; }
+#MathSymbol4 { animation: moveRandom4 15.5s infinite linear, rotate 19s infinite linear; }
+#MathSymbol5 { animation: moveRandom5 16.5s infinite linear, rotate 17s infinite linear; }
+#MathSymbol6 { animation: moveRandom6 17.5s infinite linear, rotate 18s infinite linear; }
+#MathSymbol7 { animation: moveRandom7 15.2s infinite linear, rotate 16.5s infinite linear; }
+#MathSymbol8 { animation: moveRandom8 16.8s infinite linear, rotate 17.2s infinite linear; }
+#MathSymbol9 { animation: moveRandom9 17.3s infinite linear, rotate 19s infinite linear; }
+#MathSymbol10 { animation: moveRandom10 15.7s infinite linear, rotate 18.5s infinite linear; }
+
+
+
+
