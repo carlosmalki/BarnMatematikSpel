@@ -58,6 +58,7 @@ html {
     -webkit-text-stroke: 0.1px black;
     color: #84ff9f;
     border: 1px solid black;
+    cursor: pointer;
 
   }
   
@@ -197,7 +198,8 @@ html {
     font-family: "Atop Regular";
     font-weight: lighter;
     opacity: 100%;
-    font-size: 50px;
+    font-size: 100px;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 10);
 }
 
 #MathSymbol1, #MathSymbol2 {
@@ -227,16 +229,16 @@ html {
 
 
 
-#MathSymbol1 { animation: moveRandom1 16s infinite linear, rotate 20s infinite linear; }
-#MathSymbol2 { animation: moveRandom2 15s infinite linear, rotate 15s infinite linear; }
-#MathSymbol3 { animation: moveRandom3 17s infinite linear, rotate 16s infinite linear; }
-#MathSymbol4 { animation: moveRandom4 15.5s infinite linear, rotate 19s infinite linear; }
-#MathSymbol5 { animation: moveRandom5 16.5s infinite linear, rotate 17s infinite linear; }
-#MathSymbol6 { animation: moveRandom6 17.5s infinite linear, rotate 18s infinite linear; }
-#MathSymbol7 { animation: moveRandom7 15.2s infinite linear, rotate 16.5s infinite linear; }
-#MathSymbol8 { animation: moveRandom8 16.8s infinite linear, rotate 17.2s infinite linear; }
-#MathSymbol9 { animation: moveRandom9 17.3s infinite linear, rotate 19s infinite linear; }
-#MathSymbol10 { animation: moveRandom10 15.7s infinite linear, rotate 18.5s infinite linear; }
+#MathSymbol1 { animation: moveRandom1 36s infinite linear, rotate 30s infinite linear; }
+#MathSymbol2 { animation: moveRandom2 35s infinite linear, rotate 25s infinite linear; }
+#MathSymbol3 { animation: moveRandom3 37s infinite linear, rotate 26s infinite linear; }
+#MathSymbol4 { animation: moveRandom4 35.5s infinite linear, rotate 29s infinite linear; }
+#MathSymbol5 { animation: moveRandom5 36.5s infinite linear, rotate 27s infinite linear; }
+#MathSymbol6 { animation: moveRandom6 37.5s infinite linear, rotate 28s infinite linear; }
+#MathSymbol7 { animation: moveRandom7 35.2s infinite linear, rotate 26.5s infinite linear; }
+#MathSymbol8 { animation: moveRandom8 36.8s infinite linear, rotate 27.2s infinite linear; }
+#MathSymbol9 { animation: moveRandom9 37.3s infinite linear, rotate 29s infinite linear; }
+#MathSymbol10 { animation: moveRandom10 35.7s infinite linear, rotate 28.5s infinite linear; }
 
 
 
