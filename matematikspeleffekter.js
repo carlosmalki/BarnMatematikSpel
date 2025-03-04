@@ -119,3 +119,26 @@ function StartaOmSpel() {
 function TaBortMeddelande() {
     document.getElementById("meddelande").innerHTML = ""; // Töm meddelandefältet
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let playButton = document.getElementById("playButton");
+    let loader = document.querySelector(".loader");
+    let container = document.getElementById("container");
+    let mathTypeContainer = document.getElementById("MathTypeContainer");
+
+    playButton.addEventListener("click", function () {
+        // Visa loader och göm container
+        loader.style.display = "block";
+        container.classList.add("fade-out");
+
+        setTimeout(() => {
+            // När loadern försvinner, visa MathTypeContainer
+            loader.style.display = "none";
+            container.style.display = "none";
+            mathTypeContainer.style.display = "block";
+            mathTypeContainer.classList.add("fade-in");
+        }, 2000); // Vänta 2 sekunder så att loadern syns innan växlingen sker
+    });
+});
+
