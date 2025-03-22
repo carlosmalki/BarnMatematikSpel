@@ -31,12 +31,33 @@
 
 <span class="loader"></span> 
 
+
 <div id = "container">
-    <button id="playButton"><h1 id = "playButtonH1">PLAY</h1></button> 
-    <h1 id = "title">Let's play math!</h1>   
+    <div id = "container2"></div>
+        <button id="playButton"><h1 id = "playButtonH1">PLAY</h1></button> 
+        <h1 id = "title">Let's play math!</h1>   
 </div>
 
-<div id="MathTypeContainer"></div>
+<div id="MathTypeContainer">
+    <a href="StartSida.html" id = "backLink"><h1 id = "backLinkH1">Back</h1></a>
+    <h1 id = "type-h1">Select type</h1>
+    <div class="mathtype-container">
+        
+        <div class = "mathtype-background-container" id = "addition-background"></div>
+        <div onmouseenter="mathTypeText('addition','Addition')" onmouseleave ="mathTypeSymbol('addition','+')" id="addition" class="mathtype">+</div>
+        
+        <div class = "mathtype-background-container" id = "multiplikation-background"></div>
+        <div onmouseenter="mathTypeText('multiplikation','Multiplikation')" onmouseleave ="mathTypeSymbol('multiplikation','*')" id="multiplikation" class="mathtype">×</div>
+        
+        <div class ="mathtype-background-container" id = "divition-background"></div>
+        <div onmouseenter="mathTypeText('divition','Divition')" onmouseleave ="mathTypeSymbol('divition','÷')" id="divition" class="mathtype">÷</div>
+        
+        <div class ="mathtype-background-container" id = "subbtraktion-background"></div>
+        <div onmouseenter="mathTypeText('subbtraktion','Subbtraktion')" onmouseleave ="mathTypeSymbol('subbtraktion','-')" id="subbtraktion" class="mathtype">−</div>
+    </div>
+</div>
+
+
 
 
 

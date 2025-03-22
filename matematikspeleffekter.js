@@ -120,7 +120,6 @@ function TaBortMeddelande() {
     document.getElementById("meddelande").innerHTML = ""; // Töm meddelandefältet
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
     let playButton = document.getElementById("playButton");
     let loader = document.querySelector(".loader");
@@ -132,13 +131,26 @@ document.addEventListener("DOMContentLoaded", function () {
         loader.style.display = "block";
         container.classList.add("fade-out");
 
-        setTimeout(() => {
-            // När loadern försvinner, visa MathTypeContainer
-            loader.style.display = "none";
-            container.style.display = "none";
-            mathTypeContainer.style.display = "block";
-            mathTypeContainer.classList.add("fade-in");
-        }, 2000); // Vänta 2 sekunder så att loadern syns innan växlingen sker
+        // Vänta tills fade-out animationen är klar innan vi gör något mer
+        container.addEventListener("animationend", function() {
+            setTimeout(() => {
+                // När loadern försvinner, visa MathTypeContainer
+                loader.style.display = "none";
+                container.style.display = "none";
+                mathTypeContainer.style.display = "block";
+                mathTypeContainer.classList.add("fade-in");
+            }, 100); // Vänta 2 sekunder så att loadern syns innan växlingen sker
+        }, { once: true });
     });
 });
 
+
+function mathTypeText(id,typename) {
+    document.getElementById(id).innerHTML = typename;
+}
+
+function mathTypeSymbol(id,symbol) {
+    document.getElementById(id).innerHTML = symbol;
+    
+    
+}
