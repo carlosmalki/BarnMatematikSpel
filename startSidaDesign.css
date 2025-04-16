@@ -208,7 +208,7 @@ html {
     -webkit-text-stroke: 1.2px black;
     text-shadow: 0 0 0.30em rgba(0, 0, 0, 10);
     z-index: 10;
-
+    cursor: default;
 
   }
   
@@ -650,6 +650,7 @@ html {
   color: #84ff9f;
   font-size: 45px;
   text-shadow: 0 0 0.30em rgba(0, 0, 0, 10);
+  cursor: default;
 }
 
 
@@ -696,12 +697,13 @@ html {
   -webkit-text-stroke: 1.2px black;
   font-family: "Atop Regular";
   font-size: 45px;
+  cursor: default;
 }
 
 #text-container {
   width: 1000px;
   height: 80vh;
-  background-color: #84ff9f; 
+  background-color: #edff8f; 
   align-items: center;
   margin-right: auto;
   margin-left: auto;
@@ -713,3 +715,55 @@ html {
 }
 
 
+#learn-container {
+
+  width: 450px;
+  height: 70vh;
+  float: left;
+  background-color: #84ff9f; 
+  align-items: center;
+  margin-right: auto;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 36px;
+  border-radius: 30px;
+  border: solid 1px black;
+
+}
+
+
+
+
+#game-container {
+
+  width: 450px;
+  height: 70vh;
+  float: right;
+  background-color: #84ff9f; 
+  align-items: center;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  margin-top: 36px;
+  border-radius: 30px;
+  border: solid 1px black;
+
+}
+
+#game-container:hover, #learn-container:hover  {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 10);
+  cursor: pointer;
+
+}
+
+
+#learnh1, #playh1 {
+
+  font-family: "Atop Regular";
+  color: #edff8f;
+  -webkit-text-stroke: 1px black;
+  margin-top: 45%;
+  font-size: 60px;
+  cursor: pointer;
+
+}
